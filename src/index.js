@@ -1,45 +1,43 @@
-const html = `<!doctype html>
-<html lang="nl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#d7ad01">
-<title>Professionalisering | Richtpunt</title>
+const page = `<!doctype html>
+<html lang="nl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#d7ad01"><title>Professionalisering | Richtpunt</title>
 <style>
-:root{font-family:Arial,Helvetica,sans-serif;color:#222;background:#f4f4f4;--yellow:#d7ad01;--grey:#555}
-*{box-sizing:border-box}body{margin:0}header{background:var(--yellow);color:#fff;padding:34px 22px}
-header,main{width:100%}.wrap{max-width:960px;margin:auto}main{padding:32px 18px}.panel{background:#fff;border-radius:12px;padding:28px;box-shadow:0 3px 16px #0000000d}
-h1{margin:0 0 8px;font-size:clamp(26px,5vw,36px)}h2{color:var(--grey);margin-top:0}
-.notice{margin-top:22px;padding:16px;border-left:4px solid var(--yellow);background:#fff8dc;line-height:1.6}
-footer{padding:20px;color:#666;text-align:center;font-size:13px}
-</style>
-</head>
-<body>
-<header><div class="wrap"><h1>Professionalisering</h1><div>Richtpunt campus Ninove – Zottegem</div></div></header>
-<main class="wrap"><section class="panel">
-<h2>Digitaal professionaliseringsplatform</h2>
-<p>Hier kunnen personeelsleden professionaliseringsactiviteiten aanvragen en opvolgen. De applicatie ondersteunt de beoordeling, financiële afhandeling, registratie en evaluatie.</p>
-<div class="notice"><strong>Opstartfase</strong><br>De technische basis is beschikbaar. De beveiligde aanmelding en de gebruikersmodules worden stapsgewijs geactiveerd. Aanmelden is nog niet beschikbaar.</div>
-</section></main>
-<footer>Richtpunt campus Ninove – Zottegem</footer>
-</body></html>`;
+:root{font-family:Arial,Helvetica,sans-serif;color:#202124;background:#f5f5f5;--yellow:#d7ad01;--grey:#555;--line:#e7e7e7;--muted:#70757a}
+*{box-sizing:border-box}body{margin:0}button,input,select,textarea{font:inherit}header{background:var(--yellow);color:#fff;padding:22px 24px}.top{max-width:1160px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:16px}.brand{font-size:21px;font-weight:700}.sub{font-size:13px;margin-top:4px;color:#fffbe8}.tag{border:1px solid #fff9;border-radius:30px;padding:7px 12px;font-size:12px;font-weight:700}
+main{max-width:1160px;margin:26px auto;padding:0 18px}.intro{display:flex;justify-content:space-between;align-items:end;gap:15px;margin-bottom:18px}h1{font-size:27px;margin:0 0 6px}p{line-height:1.55}.muted{color:var(--muted);font-size:14px}.nav{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.nav button,.action{border:1px solid #ddd;background:#fff;border-radius:8px;padding:10px 14px;cursor:pointer;color:#333}.nav button.active,.action.primary{background:#292929;color:#fff;border-color:#292929}.nav button:focus,.action:focus,input:focus,select:focus,textarea:focus{outline:2px solid #8a7000;outline-offset:2px}
+.banner{background:#fff8dc;border-left:4px solid var(--yellow);padding:14px 16px;border-radius:5px;margin:16px 0;font-size:14px;line-height:1.5}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:19px}.stat{font-size:28px;font-weight:700;margin-top:8px}.label{font-size:13px;color:var(--muted)}.section{display:none}.section.active{display:block}.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;margin-top:14px}.panel h2{font-size:18px;margin:0 0 16px;color:var(--grey)}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}label{font-size:13px;font-weight:700;color:#444}input,select,textarea{width:100%;border:1px solid #ccc;border-radius:7px;padding:10px;background:#fff;color:#222}textarea{min-height:90px;resize:vertical}.lessons{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px}.lesson{border:1px solid var(--line);border-radius:8px;padding:10px;font-size:13px}.lesson label{display:flex;gap:7px;align-items:center}.lesson input{width:auto}.empty{padding:26px;text-align:center;color:var(--muted);background:#fafafa;border:1px dashed #ccc;border-radius:9px}.pill{display:inline-block;background:#eee;border-radius:20px;padding:5px 9px;font-size:12px}.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}.action[disabled]{opacity:.45;cursor:not-allowed}footer{text-align:center;padding:28px;color:var(--muted);font-size:12px}
+@media(max-width:720px){.grid{grid-template-columns:1fr}.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.lessons{grid-template-columns:repeat(2,minmax(0,1fr))}.top{align-items:flex-start;flex-direction:column}.intro{display:block}}
+</style></head><body>
+<header><div class="top"><div><div class="brand">RICHTPUNT <span style="font-weight:400">| Professionalisering</span></div><div class="sub">Campus Ninove – Zottegem</div></div><span class="tag">ONTWIKKELPREVIEW</span></div></header>
+<main>
+<div class="intro"><div><h1>Professionalisering</h1><div class="muted">Aanvragen, beoordelen en opvolgen op één centrale plaats.</div></div></div>
+<div class="banner"><strong>Ontwikkelversie</strong> — Dit is de eerste functionele schermopbouw. Aanmelden via Microsoft 365 is nog niet geactiveerd. Formulieren worden nog niet opgeslagen of verzonden. Gebruik deze preview niet voor echte personeels- of aanvraaggegevens.</div>
+<nav class="nav" aria-label="Hoofdnavigatie"><button class="active" data-tab="home">Overzicht</button><button data-tab="new">Nieuwe aanvraag</button><button data-tab="mine">Mijn aanvragen</button><button data-tab="review">Te beoordelen</button><button data-tab="admin">Beheer</button></nav>
+<section id="home" class="section active"><div class="grid"><div class="card"><div class="label">Mijn aanvragen</div><div class="stat">—</div><div class="muted">Beschikbaar na aanmelden</div></div><div class="card"><div class="label">Wacht op beoordeling</div><div class="stat">—</div><div class="muted">Rolgebonden overzicht</div></div><div class="card"><div class="label">Budget schooljaar</div><div class="stat">—</div><div class="muted">Na configuratie van quota</div></div></div><div class="panel"><h2>Werkwijze</h2><p>Een personeelslid registreert een professionalisering, motiveert de aanvraag en geeft aan welke lessen of opdrachten impact ondervinden. De bevoegde beoordelaar behandelt de aanvraag. Na goedkeuring volgen de eventuele financiële afhandeling, PICTO-registratie en praktische opvolging.</p><p class="muted">De definitieve goedkeuringsketen, budgetregels en e-mailmeldingen worden configureerbaar gemaakt.</p></div></section>
+<section id="new" class="section"><div class="panel"><h2>Nieuwe professionaliseringsaanvraag</h2><form id="requestForm"><div class="fields">
+<div class="field"><label for="schoolyear">Schooljaar</label><select id="schoolyear"><option value="">Selecteer schooljaar</option><option>2026–2027</option><option>2027–2028</option></select></div>
+<div class="field"><label for="category">Categorie</label><select id="category"><option value="">Selecteer categorie</option><option>Pedagogisch-didactisch</option><option>Vakinhoudelijk</option></select></div>
+<div class="field full"><label for="title">Naam professionalisering</label><input id="title" placeholder="Titel van de opleiding of activiteit"></div>
+<div class="field"><label for="provider">Organisator / aanbieder</label><input id="provider"></div>
+<div class="field"><label for="timing">Moment</label><select id="timing"><option value="">Selecteer</option><option>Tijdens de lesuren</option><option>Buiten de lesuren</option></select></div>
+<div class="field"><label for="start">Begindatum en -uur</label><input id="start" type="datetime-local"></div>
+<div class="field"><label for="end">Einddatum en -uur</label><input id="end" type="datetime-local"></div>
+<div class="field full"><label for="motivation">Motivatie en meerwaarde voor Richtpunt</label><textarea id="motivation" placeholder="Waarom is deze professionalisering relevant?"></textarea></div>
+<div class="field"><label for="travel">Vervoer</label><select id="travel"><option>Niet van toepassing</option><option>Eigen vervoer</option><option>Openbaar vervoer</option><option>Schoolvervoer</option></select></div>
+<div class="field"><label for="ticket">Inschrijving / ticket vereist?</label><select id="ticket"><option>Nee</option><option>Ja</option></select></div>
+<div class="field"><label for="cost">Kostprijs (incl. btw)</label><input id="cost" type="number" min="0" step="0.01" placeholder="0,00"></div>
+<div class="field"><label for="payment">Betaling nodig?</label><select id="payment"><option>Nee</option><option>Ja, door de school</option><option>Ja, terugbetaling personeelslid</option></select></div>
+<div class="field full"><label for="colleagues">Andere deelnemende personeelsleden</label><input id="colleagues" placeholder="Namen of e-mailadressen (later via personeelslijst)"></div>
+<div class="field full"><label>Lesroosterimpact — duid de betrokken lesuren aan</label><div class="lessons">${Array.from({length:8},(_,i)=>'<div class="lesson"><label><input type="checkbox"> Lesuur '+(i+1)+'</label></div>').join('')}</div><div class="muted">De detailkoppeling met klas, vak en vervangingsopdracht wordt in de volgende iteratie aangesloten.</div></div>
+<div class="field full"><label for="notes">Bijkomende opmerkingen</label><textarea id="notes"></textarea></div>
+<div class="field full"><label for="attachment">Bijlage (programma, offerte of uitnodiging)</label><input id="attachment" type="file" accept=".pdf,.doc,.docx,.jpg,.jpeg,.png"><div class="muted">Bestanden uploaden wordt pas ingeschakeld na de beveiligde opslagconfiguratie.</div></div>
+</div><div class="actions"><button class="action primary" type="button" disabled>Indienen — nog niet actief</button><button class="action" type="reset">Formulier leegmaken</button></div></form></div></section>
+<section id="mine" class="section"><div class="panel"><h2>Mijn aanvragen</h2><div class="empty">Aanvragen worden getoond zodra Microsoft 365-aanmelding en databasekoppeling voor gebruikers actief zijn.</div></div></section>
+<section id="review" class="section"><div class="panel"><h2>Te beoordelen aanvragen</h2><div class="empty">Dit overzicht wordt zichtbaar voor bevoegde rollen (TA/TAC, directie of andere toegewezen beoordelaars).</div></div></section>
+<section id="admin" class="section"><div class="panel"><h2>Beheer en instellingen</h2><p>Beheer van schooljaren, rollen, budgetten per categorie, goedkeuringsstappen, PICTO-statussen en e-mailmeldingen.</p><div class="empty">Beheerdersfuncties worden pas beschikbaar na veilige roltoewijzing.</div></div></section>
+</main><footer>Richtpunt campus Ninove – Zottegem · Professionalisering</footer>
+<script>
+document.querySelectorAll('[data-tab]').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('[data-tab]').forEach(b=>b.classList.toggle('active',b===button));document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===button.dataset.tab));}));
+document.getElementById('requestForm').addEventListener('submit',e=>e.preventDefault());
+</script></body></html>`;
 
-export default {
-  async fetch(request, env) {
-    const url = new URL(request.url);
-    if (url.pathname === "/health") {
-      return Response.json({ ok: true, application: "Professionalisering", databaseConfigured: Boolean(env.DB) });
-    }
-    if (url.pathname.startsWith("/api/")) {
-      return Response.json({ error: "Deze API-module is nog niet geactiveerd." }, { status: 501 });
-    }
-    return new Response(html, {
-      headers: {
-        "content-type": "text/html; charset=utf-8",
-        "x-content-type-options": "nosniff",
-        "referrer-policy": "strict-origin-when-cross-origin",
-        "cache-control": "no-store"
-      }
-    });
-  }
-};
+export default { async fetch(request, env) { const url=new URL(request.url); if(url.pathname==="/health") return Response.json({ok:true,application:"Professionalisering",databaseConfigured:Boolean(env.DB),stage:"ui-preview"}); if(url.pathname.startsWith("/api/")) return Response.json({error:"Authenticatie en API zijn nog niet geactiveerd."},{status:501}); return new Response(page,{headers:{"content-type":"text/html; charset=utf-8","x-content-type-options":"nosniff","referrer-policy":"strict-origin-when-cross-origin","cache-control":"no-store","content-security-policy":"default-src 'self'; style-src 'unsafe-inline'; script-src 'unsafe-inline'; img-src 'self' data:; object-src 'none'; base-uri 'none'; frame-ancestors 'none'"}}); } };
