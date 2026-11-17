@@ -1,0 +1,15 @@
+{
+  "name": "richtpunt-professionalisering",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "db:local": "wrangler d1 execute richtpunt-professionalisering --local --file=./schema/schema.sql",
+    "db:remote": "wrangler d1 execute richtpunt-professionalisering --remote --file=./schema/schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^4.0.0"
+  }
+}
