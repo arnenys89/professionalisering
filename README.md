@@ -3,7 +3,7 @@
 Digitale applicatie voor het aanvragen, beoordelen en opvolgen van professionaliseringen.
 
 ## Status
-Eerste technische basis. De Cloudflare Worker en D1-database zijn aangemaakt. Microsoft Entra ID-authenticatie, autorisatie, e-mailverzending en de volledige gebruikersinterface moeten nog worden geconfigureerd en getest. Deze repository bevat dus nog geen productieklare toepassing.
+Fase 2: eerste applicatie-interface en aanvullende workflowtabellen zijn toegevoegd en naar Cloudflare gedeployed. De interface bevat een overzicht, aanvraagformulier, mijn-aanvragen-scherm, beoordelingsscherm en beheerscherm. Dit is nog een preview: er is geen login, gegevens worden niet opgeslagen en formulieren kunnen niet worden ingediend. Microsoft Entra ID, autorisatie, API-validatie, e-mailverzending en bestandsopslag moeten nog worden gebouwd en getest. Gebruik de preview niet met echte persoonsgegevens.
 
 ## Architectuur
 - Cloudflare Workers: webapplicatie en API
