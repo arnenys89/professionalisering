@@ -1,0 +1,11 @@
+name = "richtpunt-professionalisering"
+main = "src/index.js"
+compatibility_date = "2026-11-17"
+
+[observability]
+enabled = true
+
+[[d1_databases]]
+binding = "DB"
+database_name = "richtpunt-professionalisering"
+database_id = "62cd273b-33e8-4622-a835-ab0a215294eb"
